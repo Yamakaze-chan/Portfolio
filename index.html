@@ -1,0 +1,121 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Quang Nhat Tran - Yamakaze</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+    <link rel="shortcut icon" href="assets/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro|Caveat|Indie+Flower|Satisfy|Dancing Script|Abel|Alumni Sans Pinstripe" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="stop-scroll">
+
+  <!--[if lte IE 9]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!--Start loader-->
+  <div class="loader-wrap">
+      <div class="loader">
+          <span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span>
+      </div>
+  </div>
+  <!--End loader-->
+
+   <!-- Hero -->
+   <section class="et-hero-tabs">
+    <h1>STICKY SLIDER NAV</h1>
+    <h3>Sliding content with sticky tab nav</h3>
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-es6">ES6</a>
+      <a class="et-hero-tab" href="#tab-flexbox">Flexbox</a>
+      <a class="et-hero-tab" href="#tab-react">React</a>
+      <a class="et-hero-tab" href="#tab-angular">Angular</a>
+      <a class="et-hero-tab" href="#tab-other">Other</a>
+      <span class="et-hero-tab-slider"></span>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main class="et-main">
+    <section class="et-slide" id="tab-es6">
+      <h1>ES6</h1>
+      <h3>something about es6</h3>
+    </section>
+    <section class="et-slide" id="tab-flexbox">
+      <h1>Flexbox</h1>
+      <h3>something about flexbox</h3>
+    </section>
+    <section class="et-slide" id="tab-react">
+      <h1>React</h1>
+      <h3>something about react</h3>
+    </section>
+    <section class="et-slide" id="tab-angular">
+      <h1>Angular</h1>
+      <h3>something about angular</h3>
+    </section>
+    <section class="et-slide" id="tab-other">
+      <h1>Other</h1>
+      <h3>something about other</h3>
+    </section>
+  </main>
+
+  <!--Start Footer-->
+<!--End Footer-->
+
+<!--Chatbot-->
+<div class="chatbot_container" style="right: 10px; bottom: 30px; position: fixed;z-index: 22; max-width: 100px;max-height: 100px;">
+    <img id="popup_image" src="assets/chatbot.png" width="100" onclick="openForm()">
+    <div class="popup_chat" id="popup_chat" style=" display: none; position: fixed; bottom: 0px; right:30px; width: 350px;">
+        <!--iframe src="../templates/Chatbot.html" height="500px" width="500px"></iframe-->
+        <section class="msger" style="">
+            <header class="msger-header">
+              <div class="msger-header-title">
+                Chatbot
+                <i class="fa fa-times" onclick="closeForm()" style="float: right; width: 15px; height: 15px; color: gray;"></i>
+              </div>
+            </header>
+            <main class="msger-chat">
+              <div class="msg left-msg">
+                <div class="msg-bubble">
+                  <div class="msg-info">
+                    <div class="msg-info-name">Chatbot</div>
+                  </div>
+                  <div class="msg-text">
+                    Xin chào, tôi là chatbot. Tôi có thể giúp gì cho bạn? 😄
+                  </div>
+                </div>
+              </div>
+            </main>
+            <form id="msger-chat" class="msger-inputarea" method="GET">
+              <input type="text" class="msger-input" id="BotContent" name="BotContent" placeholder="Enter your message...">
+              <input type="submit" class="msger-send-btn">
+            </form>
+            <div id="alert" style="display:none;"></div>
+          </section>
+      </div>
+</div>
+<!--End chatbot-->
+
+<!--Start Copy-Right-->
+
+  <!--End Copy-Right-->
+
+  <!-- Add your site or application content here -->
+  <script src="portfolio.js"></script>
+  <script src="string-similarity.js"></script>
+  <script src="chatbot-core.js"></script>
+  <script src="chatbot.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+<!--https://www.soraesushi.com/vi/home-alt/-->
+</html>

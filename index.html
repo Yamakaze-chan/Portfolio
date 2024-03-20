@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
     <link rel="shortcut icon" href="assets/logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro|Caveat|Indie+Flower|Satisfy|Dancing Script|Abel|Alumni Sans Pinstripe" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro|Caveat|Indie+Flower|Satisfy|Dancing Script|Abel|Alumni Sans Pinstripe|Source Code Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./portfolio.css">
@@ -15,41 +15,57 @@
 </head>
 
 <body class="stop-scroll">
-
   <!--Start loader-->
   <div class="loader-wrap">
       <div class="loader">
-          <span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span>
+          <span class="loader-item"></span>
+          <span class="loader-item"></span>
+          <span class="loader-item"></span>
+          <span class="loader-item"></span>
+          <span class="loader-item"></span>
+          <span class="loader-item"></span>
+          <span class="loader-item"></span>
+          <span class="loader-item"></span>
+          <span class="loader-item"></span>
+          <span class="loader-item"></span>
       </div>
   </div>
   <!--End loader-->
 
    <!-- header -->
    <section class="et-hero-tabs">
-    <!--Main text-->
-    <h1>HELLO</h1>
-    <div class="typewriter">
-    <h1>My name is TRAN QUANG NHAT</h1>
-    </div>
-    <div class="typewriter">
-      <h2>I am a Senior student</h2>
-    </div>
-    <div class="et-hero-tabs-container">
-      <a class="et-hero-tab" href="#tab-es6">ES6</a>
-      <a class="et-hero-tab" href="#tab-flexbox">Flexbox</a>
-      <a class="et-hero-tab" href="#tab-react">React</a>
-      <a class="et-hero-tab" href="#tab-angular">Angular</a>
-      <a class="et-hero-tab" href="#tab-other">Other</a>
-      <span class="et-hero-tab-slider"></span>
-    </div>
+    <canvas style="z-index: 0;"></canvas>
+      <!--Main text-->
+      <div style="position: absolute;">
+        <h1 style="font-family: 'Source code pro'; font-size: 4em; color: yellow;">TRAN QUANG NHAT</h1>
+        <!-- <div class="typewriter">
+        <h1><text style="font-weight: 200; font-size: 1.5rem;">My name is</text> TRAN QUANG NHAT</h1>
+        </div><br> -->
+        <div class="typewriter"><h1>(Mason)</h1></div><br>
+        <div class="typewriter">
+          <h2>Senior student - Majoring in Computer Science</h2>
+        </div>
+      </div>
+    
+      <div class="et-hero-tabs-container">
+        <a class="et-hero-tab" href="#tab-about">ABOUT</a>
+        <a class="et-hero-tab" href="#tab-flexbox">Flexbox</a>
+        <a class="et-hero-tab" href="#tab-react">React</a>
+        <a class="et-hero-tab" href="#tab-angular">Angular</a>
+        <a class="et-hero-tab" href="#tab-other">Other</a>
+        <span class="et-hero-tab-slider"></span>
+      </div>
+    
   </section>
   <!--end header-->
 
   <!-- Main -->
   <main class="et-main">
-    <section class="et-slide" id="tab-es6">
-      <h1>ES6</h1>
-      <h3>something about es6</h3>
+    <section class="et-slide" id="tab-about">
+      <div class="about">
+        <h1>About me</h1>
+        <text>Hi, I am Tran Quang Nhat! I am a senior student majoring in computer science at University of Information Technology (UIT) - VNUHCM. My specialization is Computer Vision. </text>
+      </div>
     </section>
     <section class="et-slide" id="tab-flexbox">
       <h1>Flexbox</h1>
@@ -116,6 +132,8 @@
   <script src="chatbot-core.js"></script>
   <script src="chatbot.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js"></script>
+  <script src="js/main_page_bg.js"></script>
   <script>
     AOS.init();
   </script>

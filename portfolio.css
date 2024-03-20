@@ -1,5 +1,6 @@
 body {
     font-family: "Century Gothic", "Lato", sans-serif;
+    margin: 0px;
   }
   
   a {
@@ -17,6 +18,10 @@ body {
     background: #eee;
     text-align: center;
     padding: 0 2em;
+  }
+  .et-hero-tabs{
+    background-color: #1d212b;
+    padding: 0px;
   }
   .et-hero-tabs h1,
   .et-slide h1 {
@@ -88,32 +93,36 @@ body {
   }
 
   /* DEMO-SPECIFIC STYLES */
+  .typewriter{
+    display: inline-block;
+  }
 .typewriter h1 {
-  color: black;
-  font-family: monospace;
+  color: yellow;
+  font-family: 'Source Code Pro' ;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid transparent; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .1em; /* Adjust as needed */
   font-size: 2em;
   animation: 
-    typing 3.5s steps(30, end),
+    typing 2.5s steps(8, end),
     blink-caret .5s step-end 8;
 }
 
 .typewriter h2 {
   opacity: 0;
-  color: black;
-  font-family: monospace;
+  color: yellow;
+  font-family: 'Source Code Pro';
+  font-weight: 200;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  font-size: 2em;
+  letter-spacing: .1em; /* Adjust as needed */
+  font-size: 1.5em;
   animation: 
-    typing 3.5s steps(30, end),
+    typing 7.5s steps(74, end),
     blink-caret .5s step-end infinite,
     fadeIn 0s;
   animation-fill-mode: forwards;

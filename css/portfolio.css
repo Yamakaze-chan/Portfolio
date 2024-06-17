@@ -163,13 +163,18 @@ main {
 .HomeContent .heroline {
     font-size: 1.5rem;
     font-weight: 300;
-    padding-right:50px;
+    padding-right:10px;
     overflow-y: scroll;
     height: auto;
 }
 
 .HomeContent .heroline::-webkit-scrollbar{
-    display: none;
+    width: 10px;
+}
+
+.HomeContent .heroline::-webkit-scrollbar-thumb{
+  background-color: rgba(120, 116, 116, 0.8);
+  border-radius: 10px;
 }
 
 .buttonGroup {
@@ -222,16 +227,32 @@ main {
 
 .about-us {
     width:100%;
-    height:100%;
-
-    padding: 100px;
+    height: 100%;
+    padding: 90px;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .heading {
     padding: 20px 10px;
     font-size: 2.5rem;
     color: #80ed99;
+}
+
+.heading_navigator{
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.heading_navigator::-webkit-scrollbar{
+  width: 10px;
+}
+
+.heading_navigator::-webkit-scrollbar-thumb{
+background-color: rgba(120, 116, 116, 0.8);
+border-radius: 10px;
 }
 
 .about-us h3 {
@@ -246,6 +267,16 @@ main {
 
 .about-me-divison {
     display: flex;
+    overflow-y: scroll;
+}
+
+.about-me-divison::-webkit-scrollbar{
+  width: 10px;
+}
+
+.about-me-divison::-webkit-scrollbar-thumb{
+background-color: rgba(120, 116, 116, 0.8);
+border-radius: 10px;
 }
 
 .about-me-table {
@@ -399,12 +430,6 @@ main {
     color: #80ed99;
 }
 
-.about-us{
-    overflow: scroll;
-}
-.about-us::-webkit-scrollbar{
-    display: none;
-}
 #contact_me {
   padding: 0;
   margin: 0;

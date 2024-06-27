@@ -279,6 +279,15 @@ background-color: rgba(120, 116, 116, 0.8);
 border-radius: 10px;
 }
 
+.aboutme-deatils-content::-webkit-scrollbar{
+  width: 10px;
+}
+
+.aboutme-deatils-content::-webkit-scrollbar-thumb{
+background-color: rgba(120, 116, 116, 0.8);
+border-radius: 10px;
+}
+
 .about-me-table {
     width: 60%;
     display: grid;
